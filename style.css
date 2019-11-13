@@ -1,0 +1,127 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+
+/* NAV BAR-------------------------------------------------- */
+
+.nav {
+	background: grey;
+	z-index: 10;
+	position: relative;
+	top: 70px;
+	margin: 0 auto;
+	width: 980px;
+	height: 35px;
+}
+
+.nav ul {
+	display: flex;
+	height: 100%;
+	width: 100%;
+}
+
+.nav-list li {
+	flex: 1;
+}
+
+.nav-list li:last-child :hover {
+	flex: 2:
+}
+
+.nav img {
+	width: 30px;
+	height: auto;
+}
+
+/* HERO-------------------------------------------------------- */
+
+a,
+img {
+	cursor: pointer;
+}
+
+.main {
+	position: relative;
+	min-width: 1000px;
+	max-width: 1440px;
+	margin: 0 auto;
+	height: auto;
+	top: -(100% - 530px);
+	background-image: url(./images/hero.jpg);
+}
+
+h1,
+h3,
+.main a {
+	color: white;
+}
+
+#play {
+	width: 20px;
+	height: auto;
+}
+
+/* PROMOS--------------------------------------------------------- */
+
+.promos {
+	display: flex;
+	position: relative;
+	margin: 0 auto;
+	max-width: 1440px;
+	min-width: 1020px;
+}
+
+.promo img {
+	min-width: 255px;
+}
+
+/* FOOTER----------------------------------------------------- */
+
+.link-list a {
+  color: #08C;
+}
+
+img[src*="usa"] {
+	height: auto;
+	width: 20px;
+}
