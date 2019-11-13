@@ -59,17 +59,20 @@ body {
 }
 
 .nav ul {
+	display: -webkit-box;
 	display: flex;
 	height: 100%;
 	width: 100%;
 }
 
 .nav-list li {
-	flex: 1;
+	-webkit-box-flex: 1;
+	        flex: 1;
 }
 
 .nav-list li:last-child :hover {
-	flex: 2:
+	-webkit-box-flex: 2;
+	        flex: 2
 }
 
 .nav img {
@@ -92,14 +95,23 @@ a:hover {
 	text-decoration: underline;
 }
 
+.main-wrapper {
+	position: relative;
+	margin: 0 auto;
+	min-width: 1020px;
+	max-width: 1440px;
+	height: 530px;
+}
+
 .main {
 	position: relative;
-	min-width: 1000px;
-	max-width: 1440px;
-	margin: 0 auto;
-	height: auto;
-	top: -(100% - 530px);
+	height: 100%;
+	width: inherit;
 	background-image: url(./images/hero.jpg);
+	background-position: center 530px;
+	left: 10%;
+	transform: translateX(-10%);
+	overflow: hidden;
 }
 
 h1,
@@ -116,6 +128,7 @@ h3,
 /* PROMOS--------------------------------------------------------- */
 
 .promos {
+	display: -webkit-box;
 	display: flex;
 	position: relative;
 	margin: 0 auto;
@@ -123,8 +136,18 @@ h3,
 	min-width: 1020px;
 }
 
-.promo img {
+.promo {
 	min-width: 255px;
+	height: 100%;
+	overflow: hidden;
+}
+
+.promo img {
+	height: 100%;
+	position: relative;
+	left: 50%;
+	-webkit-transform: translateX(-50%);
+	        transform: translateX(-50%);
 }
 
 /* FOOTER----------------------------------------------------- */
@@ -157,6 +180,7 @@ p,
 }
 
 .link-list {
+	display: -webkit-box;
 	display: flex;
 }
 
