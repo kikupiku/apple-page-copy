@@ -59,14 +59,18 @@ body {
 	color: white;
 	font-family: sans-serif;
 	font-weight: bold;
-	font-size: 14px;
+	font-size: 13px;
 	text-shadow: 0 -1.2px black;
 	border-radius: 5px;
 	box-shadow: rgba(0,0,0,0.3) 0 1px 2px;
 }
 
 #apple {
-	text-align: center;
+	background: linear-gradient(to right, rgba(0,0,0,0), rgba(0,0,0,0) 99%, rgba(135,135,135,0.8) 99%, rgba(95,95,95,0.5) 100%);
+}
+
+#apple img {
+	width: 23px;
 }
 
 .nav-list {
@@ -79,28 +83,76 @@ body {
 }
 
 .nav-list li {
-	-webkit-box-flex: 1;
-	        flex: 1;
 	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding-left: 1px;
+	padding-right: 1px;
 }
 
-.nav-list li {
-	padding-left: 1px rgba(131,131,131,.72);
-	border-left: 1px solid rgba(#474747,.74);
+.nav-list li:not(.odd-one-out) {
+		background: linear-gradient(to right, rgba(135,135,135,.8), rgba(135,135,135,.8) 1.1%, rgba(0,0,0,0) 1.1%, rgba(0,0,0,0) 99%, rgba(135,135,135,0.8) 99%, rgba(95,95,95,0.5) 100%);
+}
+
+.nav-list li:not(#search) {
+-webkit-box-flex: 1;
+				flex: 1;
+}
+
+.nav-list li:not(#apple) {
+	border-left: 0.5px solid rgba(71,71,71,.74);
 }
 
 .nav-list li:not(#search):hover {
 	background: linear-gradient(to right, rgba(0,0,0,.25), rgba(0,0,0,.3) 3%, rgba(0,0,0,.4) 12%);
 }
 
-.nav-list li:last-child :active {
-	-webkit-box-flex: 2;
-	        flex: 2
+#search {
+	flex: 1.2;
+	background: linear-gradient(to right, rgba(135,135,135,.8), rgba(135,135,135,.8) 1.1%, rgba(0,0,0,0) 1.1%, rgba(0,0,0,0) 100%);
 }
 
-.nav img {
-	width: 30px;
-	height: auto;
+#search:focus {
+	flex: 3;
+}
+
+#search span {
+	position: relative;
+	transform: rotate(-45deg);
+	right: 100px;
+	color: white;
+	transition-duration: 0.5s;
+}
+
+input {
+	width: 105px;
+	border-top: 2px solid #393939;
+	border-bottom: 1px solid #8d8d8d;
+	border-right: none;
+	border-left: none;
+	text-shadow: 0 1px 1px black;
+	border-radius: 10px;
+	background-color: rgba(166,165,166,.2);
+	transition-property: width, background-color;
+	transition-duration: 0.5s;
+}
+
+input:focus {
+	outline: none;
+	width: 170px;
+	background-color: white;
+}
+
+input:focus ~ span {
+	color: #585555 !important;
+	text-shadow: none !important;
+	right: 165px !important;
+	transition-duration: 0.5s;
+}
+
+.search-field {
+	padding-left: 20px;
 }
 
 /* HERO-------------------------------------------------------- */
