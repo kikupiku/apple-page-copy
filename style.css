@@ -44,6 +44,7 @@ q:before, q:after {
 
 body {
 	box-sizing: border-box;
+	overflow: hidden;
 }
 
 /* NAV BAR-------------------------------------------------- */
@@ -83,19 +84,19 @@ body {
 	height: 100%;
 	width: 100%;
 	-webkit-box-pack: center;
-	 justify-content: center;
+	        justify-content: center;
 	-webkit-box-align: center;
-	     	align-items: center;
+	        align-items: center;
 }
 
 .nav-list li {
-	display: flex;
-	display: -webkit-box;
 	height: 100%;
+	display: -webkit-box;
+	display: flex;
 	-webkit-box-pack: center;
-	 justify-content: center;
+	        justify-content: center;
 	-webkit-box-align: center;
-	      align-items: center;
+	        align-items: center;
 	padding-left: 1px;
 	padding-right: 1px;
 }
@@ -127,16 +128,16 @@ body {
 }
 
 #search:focus {
-							flex: 3;
 	-webkit-box-flex: 3;
+	        flex: 3;
 }
 
 #search span {
 	color: white;
-	position: relative;
-	right: 100px;
 	-webkit-transform: rotate(-45deg);
 	        transform: rotate(-45deg);
+	position: relative;
+	right: 100px;
 	-webkit-transition-duration: 0.5s;
 	        transition-duration: 0.5s;
 }
@@ -149,8 +150,8 @@ input {
 	border-right: none;
 	border-top: 2px solid #393939;
 	text-shadow: 0 1px 1px black;
-	transition-property: width, background-color;
 	-webkit-transition-property: width, background-color;
+	transition-property: width, background-color;
 	-webkit-transition-duration: 0.5s;
 	        transition-duration: 0.5s;
 	width: 105px;
@@ -166,8 +167,8 @@ input:focus ~ span {
 	color: #585555 !important;
 	right: 165px !important;
 	text-shadow: none !important;
-					transition-duration: 0.5s;
 	-webkit-transition-duration: 0.5s;
+	        transition-duration: 0.5s;
 }
 
 .search-field {
@@ -204,9 +205,9 @@ a:hover {
 	left: 10%;
 	overflow: hidden;
 	position: relative;
-					transform: translateX(-10%);
-	-webkit-transform: translateX(-10%);
 	width: inherit;
+	-webkit-transform: translateX(-10%);
+	        transform: translateX(-10%);
 }
 
 .texts {
@@ -240,21 +241,21 @@ a:hover {
 }
 
 #play:hover {
-					transform: translateY(-50%);
 	-webkit-transform: translateY(-50%);
+	        transform: translateY(-50%);
 }
 
 /* PROMOS--------------------------------------------------------- */
 
 .promos {
-	display: flex;
 	display: -webkit-box;
+	display: flex;
 	margin: 0 auto;
 	max-width: 1440px;
 	min-width: 1020px;
+	position: relative;
 	-webkit-box-pack: justify;
 	        justify-content: space-between;
-	position: relative;
 }
 
 .promo {
@@ -275,8 +276,8 @@ a:hover {
 	height: 100%;
 	left: 50%;
 	position: relative;
-					transform: translateX(-50%);
 	-webkit-transform: translateX(-50%);
+	        transform: translateX(-50%);
 }
 
 /* FOOTER----------------------------------------------------- */
