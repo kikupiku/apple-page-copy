@@ -8,4 +8,4 @@ The focus of this project was gradients in the navigation bar. I tried to pay cl
 
 Live version of the project available **[HERE](https://kikupiku.github.io/apple-page-copy/)**
 
-![gif on the project in action](https://res.cloudinary.com/kikupiku/image/upload/v1597070449/project-gifs/apple-clone_gqqac5.gif)
+![gif on the project in action](https://res.cloudinary.com/kikupiku/image/upload/v1602936453/project-gifs/apple-clone_gqij5s.gif)
